@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actv_box1"
+        style="@style/text_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/hello_box_one"
+        app:fontFamily="@font/iransans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actv_box4"
+        style="@style/text_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/box_four"
+        app:fontFamily="@font/iransans"
+        app:layout_constraintBottom_toBottomOf="@+id/actv_box5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actv_box5"
+        app:layout_constraintTop_toBottomOf="@+id/actv_box3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actv_box3"
+        style="@style/text_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/box_three"
+        app:fontFamily="@font/iransans"
+        app:layout_constraintBottom_toTopOf="@+id/actv_box4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actv_box5"
+        app:layout_constraintTop_toBottomOf="@+id/actv_box2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actv_box2"
+        style="@style/text_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/box_two"
+        app:fontFamily="@font/iransans"
+        app:layout_constraintBottom_toTopOf="@+id/actv_box3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actv_box5"
+        app:layout_constraintTop_toBottomOf="@+id/actv_box1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/actv_box5"
+        style="@style/text_box"
+        android:layout_width="125dp"
+        android:layout_height="155dp"
+        android:text="@string/box_five"
+        app:fontFamily="@font/iransans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actv_box1" />
+
+    <Button
+        android:id="@+id/btn_blue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_green"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actv_box4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
